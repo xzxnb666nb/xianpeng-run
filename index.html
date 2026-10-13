@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#0d1120" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="robots" content="noindex" />
+    <title>贤鹏快跑</title>
+    <script type="module" crossorigin src="./assets/index-lhhG6Kng.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DGme5czU.css">
+  </head>
+  <body>
+    <div id="app">
+      <div id="game"></div>
+
+      <div id="hud" class="hidden">
+        <div class="hud-top">
+          <div class="hud-left">
+            <div class="hud-distance"><span id="hud-distance">0</span><small>米</small></div>
+            <div class="hud-coins">🪙 <span id="hud-coins">0</span></div>
+          </div>
+          <div class="hud-chase">
+            <div class="hud-chase-label">😈 被追进度</div>
+            <div class="hud-chase-track"><div id="hud-chase-fill" class="hud-chase-fill"></div></div>
+          </div>
+          <div class="hud-right">
+            <div class="hud-best">最好 <span id="hud-best">0</span> 米</div>
+            <button id="mute-btn" class="hud-mute">🔊</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="gameover" class="overlay">
+        <div class="panel">
+          <h2>被抓住了！</h2>
+          <p>这次跑了 <strong id="go-distance">0</strong> 米<span id="go-best-badge" class="badge">新纪录！</span></p>
+          <p>本局金币 <strong id="go-coins">0</strong> 枚<span id="go-coins-note" class="note"></span></p>
+          <p class="muted">最好成绩 <span id="go-best">0</span> 米</p>
+          <button id="restart-btn">再来一次（空格）</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
